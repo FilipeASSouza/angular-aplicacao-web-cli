@@ -20,6 +20,8 @@ ng new 'nome do projeto'
 
 ng generate component 'caminho e nome do component ex: componentes/container'
 
+ng g c 'caminho e nome do component ex: componentes/container'
+
 # Link documentação oficial angula
 
 https://angular.dev/reference/releases
@@ -35,3 +37,7 @@ https://update.angular.io/?v=16.0-17.0
 Importante!!
 
 Outra jogada de mestre é usar os migration guides. Eles são como os GPSs do desenvolvimento de software. Quer migrar sua aplicação de uma versão para outra? Os migration guides mostram o caminho, evitando os buracos e garantindo uma viagem tranquila.
+
+# Ajustando tsconfig.json angula
+
+propriedade resolveJsonModule estando true, auxilia para interpletar o arquivo json que está sendo utilizado na aplicação.
