@@ -45,3 +45,8 @@ propriedade resolveJsonModule estando true, auxilia para interpletar o arquivo j
 # Continuacao do curso
 
 https://www.figma.com/file/uXjoavDEvDjyE8LsXgliGx/Indexa-%7C-Angular---Primeiros-Passos?type=design&node-id=241-4472&mode=design
+
+# Informação tipos de formulários angular
+
+Tipo de formulário reativo, orientado a dados.
+Tipo de formulário orientado a templates.
