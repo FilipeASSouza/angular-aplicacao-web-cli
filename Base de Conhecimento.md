@@ -41,3 +41,7 @@ Outra jogada de mestre é usar os migration guides. Eles são como os GPSs do de
 # Ajustando tsconfig.json angula
 
 propriedade resolveJsonModule estando true, auxilia para interpletar o arquivo json que está sendo utilizado na aplicação.
+
+# Continuacao do curso
+
+https://www.figma.com/file/uXjoavDEvDjyE8LsXgliGx/Indexa-%7C-Angular---Primeiros-Passos?type=design&node-id=241-4472&mode=design
