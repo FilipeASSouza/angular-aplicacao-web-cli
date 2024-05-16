@@ -34,6 +34,7 @@ export class FormularioContatoComponent {
   salvarContato(){
     if(this.contatoForm.valid){
       console.log(this.contatoForm.value);
+      console.log(this.contatoForm.get('email')?.errors);//esse interrorgação é para informar ao typescript que é seguro
     }
   }
 

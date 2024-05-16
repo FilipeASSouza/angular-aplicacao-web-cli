@@ -37,10 +37,16 @@
         placeholder="Digite o email do contato"
         formControlName="email"
         />
-        @if(contatoForm.get('email')?.errors 
+        @if(contatoForm.get('email')?.errors?.['required'] 
             && contatoForm.get('email')?.touched){
                 <div class="mensagem-erro">
                     Campo obrigatório!
+                </div>
+        }
+        @if(contatoForm.get('email')?.errors?.['email'] 
+            && contatoForm.get('email')?.touched){
+                <div class="mensagem-erro">
+                    Formato de e-mail inválido!
                 </div>
         }
         <app-separador></app-separador>
