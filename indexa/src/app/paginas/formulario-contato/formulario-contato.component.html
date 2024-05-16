@@ -76,7 +76,13 @@
 
         <section class="botoes">
             <button (click)="cancelar()" type="button" class="botao-cancelar">Cancelar</button>
-            <button type="submit" class="botao-salvar">Salvar contato</button>
+            <button 
+                [disabled]="contatoForm.invalid"
+                type="submit" 
+                [ngClass]="contatoForm.valid ? 'botao-salvar' : 'botao-desabilitado'"
+                ><!-- isso [disabled] proper binding -->
+                Salvar contato
+            </button>
         </section>
     </form>
 </app-container>
