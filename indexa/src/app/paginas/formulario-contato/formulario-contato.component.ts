@@ -5,6 +5,7 @@ import { RouterLink } from '@angular/router';
 
 import { ContainerComponent } from '../../componentes/container/container.component';
 import { SeparadorComponent } from '../../componentes/separador/separador.component';
+import { ContatoService } from '../../services/contato.service';
 
 @Component({
   selector: 'app-formulario-contato',
@@ -24,6 +25,10 @@ export class FormularioContatoComponent implements OnInit{
 
   contatoForm!: FormGroup;
 
+  constructor(private contatoService :ContatoService){
+
+  }
+
   ngOnInit(){
     this.inicializarFormulario();
   }
@@ -40,10 +45,14 @@ export class FormularioContatoComponent implements OnInit{
   }
 
   salvarContato(){
-    if(this.contatoForm.valid){
+
+    const novoContato = this.contatoForm.value;
+    this.contatoService.salvarContato(novoContato);
+
+    /*if(this.contatoForm.valid){
       console.log(this.contatoForm.value);
       console.log(this.contatoForm.get('email')?.errors);//esse interrorgação é para informar ao typescript que é seguro
-    }
+    }*/
   }
 
   cancelar() {
