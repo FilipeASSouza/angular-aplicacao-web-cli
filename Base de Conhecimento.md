@@ -54,3 +54,21 @@ Tipo de formulário orientado a templates.
 # Services e injeção de dependência no Angular: o que são e como funcionam?
 
 https://www.alura.com.br/artigos/services-injecao-dependencia-angular-o-que-sao-como-funcionam?_gl=1*ju1e3v*_ga*MTU4NzgwMTU5Mi4xNjk4MzQyNTk1*_ga_1EPWSW3PCS*MTcxNjgyOTQxMC4xODEuMS4xNzE2ODI5OTQ5LjAuMC4w*_fplc*SWR6a1lUZnhDTEpVQzZUVGdTMHhYS3NGU0JSRiUyRm9vVllYVURJN2dEMHFSMHRnTkxxa0pKZHZpUm42Ukoyc3JVYVlIbGlzM083Ynh4bDV4d0g3QkJSRHcyU0VmSWliWnRNdXp6MEVBTVk1cXJZbFVYUWY3UXM3UCUyQnhyUnlWUSUzRCUzRA..
+
+# Instalando JSON server
+
+# 1º Passo: Comando para criar o arquivo de configuração da aplicação JSON
+
+npm init -y
+
+Observação: o arquivo irá ser utilizado para dar o start na aplicação.
+
+# 2º Passo: executar o comando abaixo para instalar o JSON Server
+
+npm i -g json-server@0.17.4
+
+# Iniciando o json-server
+
+na pasta do backend digite
+
+npm start
