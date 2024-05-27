@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
-import { RouterLink } from '@angular/router';
+import { Router, RouterLink } from '@angular/router';
 
 import { ContainerComponent } from '../../componentes/container/container.component';
 import { SeparadorComponent } from '../../componentes/separador/separador.component';
@@ -25,7 +25,10 @@ export class FormularioContatoComponent implements OnInit{
 
   contatoForm!: FormGroup;
 
-  constructor(private contatoService :ContatoService){
+  constructor(
+    private contatoService :ContatoService,
+    private router :Router
+  ){
 
   }
 
@@ -48,6 +51,8 @@ export class FormularioContatoComponent implements OnInit{
 
     const novoContato = this.contatoForm.value;
     this.contatoService.salvarContato(novoContato);
+    this.contatoForm.reset();
+    this.router.navigateByUrl('/lista-contatos');
 
     /*if(this.contatoForm.valid){
       console.log(this.contatoForm.value);
@@ -56,7 +61,8 @@ export class FormularioContatoComponent implements OnInit{
   }
 
   cancelar() {
-    console.log('Cancelado!');
+    this.contatoForm.reset();
+    //console.log('Cancelado!');
   }
 
 }
