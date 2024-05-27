@@ -39,7 +39,10 @@ export class ListaContatosComponent implements OnInit{
   constructor(private contatoService :ContatoService){ }
 
   ngOnInit(){//utilizando hulk para informar o ciclo de vida do component
-    this.contatos = this.contatoService.obterContatos();
+    //necessario utilizar subscribe para trabalhar com o observable
+    this.contatoService.obterContatos().subscribe(listaContatos => {
+      this.contatos = listaContatos;
+    });
   }
 
   /* Remove os acentos de uma string*/
