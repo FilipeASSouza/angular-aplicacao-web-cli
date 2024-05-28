@@ -48,12 +48,12 @@ export class FormularioContatoComponent implements OnInit{
   }
 
   salvarContato(){
-
     const novoContato = this.contatoForm.value;
-    this.contatoService.salvarContato(novoContato);
-    this.contatoForm.reset();
-    this.router.navigateByUrl('/lista-contatos');
-
+    this.contatoService.salvarContato(novoContato).subscribe(() => {
+      this.contatoForm.reset();
+      this.router.navigateByUrl('/lista-contatos');
+    });
+    
     /*if(this.contatoForm.valid){
       console.log(this.contatoForm.value);
       console.log(this.contatoForm.get('email')?.errors);//esse interrorgação é para informar ao typescript que é seguro
