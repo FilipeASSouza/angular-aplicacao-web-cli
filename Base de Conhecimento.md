@@ -1,6 +1,10 @@
 # Link do Figma
 
+1º
 https://www.figma.com/file/uXjoavDEvDjyE8LsXgliGx/Indexa-%7C-Angular---Primeiros-Passos?type=design&node-id=56-151029&mode=design&t=lg6FDUeyGRjS0nLt-0
+
+2º
+https://www.figma.com/design/uXjoavDEvDjyE8LsXgliGx/Indexa-%7C-Angular---Primeiros-Passos?node-id=320-7053&t=SF35XB3mJH1LFzfb-0
 
 # Instalando angular/CLI
 
