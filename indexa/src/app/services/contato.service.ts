@@ -22,4 +22,10 @@ export class ContatoService {
    salvarContato(contato :Contato){
     return this.http.post<Contato>(this.API, contato);
    }
+
+   buscarPorId(id:Number) :Observable<Contato> {
+    
+      const url = `${this.API}/${id}`;
+      return this.http.get<Contato>(url);
+   }
 }
