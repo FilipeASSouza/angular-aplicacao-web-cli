@@ -27,6 +27,11 @@
                 (change)="aoSelecionarArquivo($event)"
                 > <!-- qualquer tipo de formato de imagem sera aceito -->
         </div>
+        @if(contatoForm.get('avatar')?.value !== ''){
+            <figure>
+                <img [src]="contatoForm.get('avatar')?.value" alt="Avatar do contato">
+            </figure>
+        }
         <label for="nome">Nome</label>
         <input type="text" id="nome"
         placeholder="Digite o nome do contato"

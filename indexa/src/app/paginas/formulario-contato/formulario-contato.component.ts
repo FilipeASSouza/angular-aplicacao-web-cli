@@ -93,6 +93,7 @@ export class FormularioContatoComponent implements OnInit{
         this.contatoForm.get('avatar')?.setValue(reader.result)
       }
     }
+    //conversão em Base64 para string
     reader.readAsDataURL(file);
   }
 
