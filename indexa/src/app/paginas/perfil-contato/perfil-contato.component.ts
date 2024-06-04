@@ -6,6 +6,7 @@ import { ContainerComponent } from '../../componentes/container/container.compon
 import { Contato } from '../../componentes/contato/contato';
 import { ContatoService } from '../../services/contato.service';
 import { SeparadorComponent } from '../../componentes/separador/separador.component';
+import { CabecalhoComponent } from '../../componentes/cabecalho/cabecalho.component';
 
 @Component({
   selector: 'app-perfil-contato',
@@ -14,7 +15,8 @@ import { SeparadorComponent } from '../../componentes/separador/separador.compon
     CommonModule,
     ContainerComponent,
     RouterLink,
-    SeparadorComponent
+    SeparadorComponent,
+    CabecalhoComponent
   ],
   templateUrl: './perfil-contato.component.html',
   styleUrl: './perfil-contato.component.css'

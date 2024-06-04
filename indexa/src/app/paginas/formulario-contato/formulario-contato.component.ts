@@ -7,6 +7,7 @@ import { ContainerComponent } from '../../componentes/container/container.compon
 import { SeparadorComponent } from '../../componentes/separador/separador.component';
 import { ContatoService } from '../../services/contato.service';
 import { MensagemErroComponent } from '../../componentes/mensagem-erro/mensagem-erro.component';
+import { CabecalhoComponent } from '../../componentes/cabecalho/cabecalho.component';
 
 @Component({
   selector: 'app-formulario-contato',
@@ -17,7 +18,8 @@ import { MensagemErroComponent } from '../../componentes/mensagem-erro/mensagem-
     SeparadorComponent,
     ReactiveFormsModule,
     RouterLink,
-    MensagemErroComponent
+    MensagemErroComponent,
+    CabecalhoComponent
   ],
   templateUrl: './formulario-contato.component.html',
   styleUrl: './formulario-contato.component.css'
