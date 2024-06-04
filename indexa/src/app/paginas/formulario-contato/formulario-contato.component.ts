@@ -41,6 +41,7 @@ export class FormularioContatoComponent implements OnInit{
   inicializarFormulario(){
     this.contatoForm = new FormGroup({
       nome: new FormControl('', Validators.required),
+      avatar: new FormControl('', Validators.required),
       telefone: new FormControl('', [Validators.required]),
       email: new FormControl('', [Validators.required, Validators.email]),
       aniversario: new FormControl(''),
@@ -73,6 +74,26 @@ export class FormularioContatoComponent implements OnInit{
       console.log(this.contatoForm.value);
       console.log(this.contatoForm.get('email')?.errors);//esse interrorgação é para informar ao typescript que é seguro
     }*/
+  }
+
+  aoSelecionarArquivo(event:any){
+    const file:File = event.target.files[0];
+    if(file){
+      this.lerArquivo(file);
+    }
+  }
+
+  lerArquivo(file:File){
+    //instancia que vai ser responsavel por fazer essa leitura
+    const reader = new FileReader();
+    //onload significa quando esse arquivo for carregado o que queremos que aconteça
+    reader.onload = () => {
+      if(reader.result){
+        //na linha 93 foi setado o resultado na propriedade avatar
+        this.contatoForm.get('avatar')?.setValue(reader.result)
+      }
+    }
+    reader.readAsDataURL(file);
   }
 
   cancelar() {

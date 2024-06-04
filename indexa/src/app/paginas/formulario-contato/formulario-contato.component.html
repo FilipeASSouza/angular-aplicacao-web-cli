@@ -24,6 +24,7 @@
                 accept="image/*"
                 id="avatar"
                 required
+                (change)="aoSelecionarArquivo($event)"
                 > <!-- qualquer tipo de formato de imagem sera aceito -->
         </div>
         <label for="nome">Nome</label>
