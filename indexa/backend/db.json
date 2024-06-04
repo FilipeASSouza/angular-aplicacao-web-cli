@@ -1,24 +1,6 @@
 {
   "contatos": [
     {
-      "nome": "Maria",
-      "telefone": "99 99999999",
-      "email": "maria@email.com",
-      "aniversario": "1995-06-01",
-      "redes": "",
-      "observacoes": "",
-      "id": 1
-    },
-    {
-      "nome": "João",
-      "telefone": "88 88888888",
-      "email": "maria@email.com",
-      "aniversario": "1990-01-06",
-      "redes": "",
-      "observacoes": "",
-      "id": 2
-    },
-    {
       "nome": "teste",
       "telefone": 31992537765,
       "email": "teste@teste.com.br",
