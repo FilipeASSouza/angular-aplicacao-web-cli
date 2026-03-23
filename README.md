@@ -4,6 +4,43 @@ Aplicação desenvolvida em Angular para gerenciamento de contatos, com funciona
 
 💡 O projeto demonstra evolução real de um sistema frontend moderno, com foco em boas práticas, arquitetura e experiência do usuário.
 
+### 🚀 Tecnologias utilizadas
+### 🧩 Frontend
+- Angular 16 — Framework principal para construção da aplicação
+- TypeScript — Tipagem estática e maior segurança no desenvolvimento
+- HTML5 + CSS3 — Estrutura e estilização da interface
+- Angular CLI — Gerenciamento e build do projeto
+
+### ⚡ Programação reativa
+- RxJS — Manipulação de dados assíncronos com Observables
+- HttpClient — Consumo de API REST
+- 🧾 Formulários
+- Reactive Forms — Controle avançado de formulários
+- Validações customizadas — Regras de negócio aplicadas ao formulário
+
+### 🌐 Backend (simulado)
+- json-server — API REST fake para simulação de backend
+
+### 💾 Persistência de dados
+- LocalStorage — Armazenamento local no navegador
+- Sincronização com API REST
+
+### 🎨 UI/UX
+- CSS customizado
+- Material Icons — Ícones da interface
+- Componentização — Reutilização de elementos visuais
+
+### 🧱 Arquitetura e padrões
+- Component-based architecture
+- Separation of Concerns (SoC)
+- Service Layer Pattern
+- Routing Module (SPA)
+
+### 🛠️ Ferramentas e ambiente
+- Node.js
+- npm
+- Git & GitHub
+
 ### 📌 Sobre o projeto
 
 A aplicação permite:
